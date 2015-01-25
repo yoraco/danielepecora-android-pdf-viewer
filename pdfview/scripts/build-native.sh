@@ -19,7 +19,7 @@ cd "$SCRIPTDIR/../deps"
 echo "extracting deps"
 tar xf $FREETYPE.tar.bz2 && echo "freetype extracted" &
 tar xf $JPEGSRC && echo "jpeg extracted" &
-(unxz < $MUPDF.tar.xz | tar -xf -) && echo "mupdf extracted" &
+tar --xz -xf $MUPDF.tar.xz && echo "mupdf extracted" &
 tar xf $OPENJPEG.tar.gz && echo "openjpeg extracted" &
 tar xf $JBIG2DEC.tar.gz && echo "jbig2dec extracted" &
 wait
