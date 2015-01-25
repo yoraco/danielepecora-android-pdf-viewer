@@ -6,6 +6,7 @@ syntax: regexp
 ^pdfview/jni/jpeg/(?!.*\.mk$).+
 
 syntax: glob
+*.classpath
 *.sublime-project
 *.sublime-workspace
 .DS_Store
